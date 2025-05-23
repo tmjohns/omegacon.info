@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OmegaCon Geelong 2025</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    header {
+      background: #333;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    section {
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 800px;
+    }
+    .banner {
+      background: url('Logos/omegacon.png') no-repeat center center/cover;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+    .banner h2 {
+      font-size: 2.5rem;
+    }
+    .faq-item {
+      margin-bottom: 15px;
+    }
+    .faq-item h3 {
+      margin: 0;
+    }
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header style="display: flex; align-items: center; justify-content: space-between; background: #333; color: #fff; padding: 10px;">
+  <div style="display: flex; align-items: center;">
+    <img src="Logos/omegacon.png" alt="OmegaCon Logo" style="width: 50px; height: auto; margin-right: 15px;">
+    <h1 style="margin: 0;">OmegaCon 2025</h1>
+  </div>
+    <nav style="background: #333; color: #fff; padding: 10px 0; text-align: center;">
+      <a href="#details" style="color: #fff; text-decoration: none; margin: 0 15px;">Details</a>
+      <a href="#about" style="color: #fff; text-decoration: none; margin: 0 15px;">About</a>
+      <a href="#faq" style="color: #fff; text-decoration: none; margin: 0 15px;">FAQ</a>
+      <a href="https://events.humanitix.com/omegacon-s7k4lxtd?hxchl=hex-pfl" target="_blank" style="color: #fff; text-decoration: none; margin: 0 15px;">Tickets</a>
+      <a href="https://aftergame.app/events/a60571c7-dd54-4014-b02c-612775145f18" target="_blank" style="color: #fff; text-decoration: none; margin: 0 15px;">Schedule</a>
+    </nav>
+  </header>
+
+  <div class="banner">
+    <h2>A table top gaming convention in Geelong, Australia.</h2>
+  </div>
+
+  <section id="gallery">
+    <div style="position: relative; width: 100%; max-width: 800px; margin: 0 auto; height: 400px; overflow: hidden;">
+      <img src="Gallery/pexels-pavel-danilyuk-8111328.jpg" alt="Gallery Image 1" style="position: absolute; width: 100%; height: 100%; object-fit: cover; opacity: 1; transition: opacity 2s;">
+      <img src="Gallery/pexels-cottonbro-4691567.jpg" alt="Gallery Image 2" style="position: absolute; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity 2s;">
+      <img src="Gallery/pexels-pavel-danilyuk-8111364.jpg" alt="Gallery Image 3" style="position: absolute; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity 2s;">
+      <img src="Gallery/pexels-loveishersign-28299678.jpg" alt="Gallery Image 4" style="position: absolute; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity 2s;">
+    </div>
+  </section>
+  
+  <script>
+    const images = document.querySelectorAll('#gallery img');
+    let currentIndex = 0;
+  
+    setInterval(() => {
+      images[currentIndex].style.opacity = 0; // Fade out current image
+      currentIndex = (currentIndex + 1) % images.length; // Move to the next image
+      images[currentIndex].style.opacity = 1; // Fade in next image
+    }, 30000); // 30 seconds interval
+  </script>
+
+  <section id="details">
+    <h2>Event Details</h2>
+    <p>Date: May 31, 2025</p>
+    <p>Time: 9:30 AM - 9:30 PM</p>
+    <p>Location: Geelong West Neighborhood House (89 Autumn St, Geelong West)</p>
+    <section id="location">
+      <div style="width: 100%; max-width: 800px; height: 400px; margin: 0 auto;">
+        <iframe 
+          src="https://www.openstreetmap.org/export/embed.html?bbox=144.345822%2C-38.141980%2C144.349373%2C-38.144210&amp;layer=mapnik&amp;marker=-38.143186%2C144.346401" 
+          style="border: 1px solid black; width: 100%; height: 100%;" 
+          allowfullscreen 
+          loading="lazy">
+        </iframe>
+        <p><a href="https://www.openstreetmap.org/?mlat=-38.1495&amp;mlon=144.344#map=19/-38.143095/144.347598" target="_blank">View Larger Map</a></p>
+      </div>
+    </section>
+  </section>
+    
+  <section id="tickets">
+    <h2>Tickets</h2>
+    <p>Tickets are available for purchase through <a href="https://events.humanitix.com/omegacon-s7k4lxtd?hxchl=hex-pfl" target="_blank">Humanitix</a>.</p>
+    <p>Prices:</p>
+    <ul>
+       <li>Adults: $10</li>
+       <li>Children (12-18): $5</li>
+       <li>Children (11 and under): Free</li>
+    </ul>
+    <p>Tickets are available at the door, but we recommend purchasing in advance to guarantee your spot.</p>
+  </section>
+
+  <section id="about">
+    <h2>About the Convention</h2>
+    <p>OmegaCon is an all-day games convention with opportunites to play a range of board, card and role playing games.</p>
+    <section id="partners">
+      <h2>Our Partners</h2>
+      <div style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; gap: 20px; margin-top: 20px;">
+        <a href="https://gwnh.org.au/" target="_blank">
+          <img src="Logos/gwnh-logo-circle.png" alt="Geelong West Neighborhood House Logo" style="width: 125px; height: auto;">
+        </a>
+        <a href="https://guf.com.au/" target="_blank">
+          <img src="Logos/Guf_Logo.webp" alt="Guf Logo" style="width: 125px; height: auto;">
+        </a>
+        <a href="https://newtownuniting.org/" target="_blank">
+          <img src="Logos/ucalogo.jpg" alt="Partner 3 Logo" style="width: 125px; height: auto;">
+        </a>
+        <a href="https://www.sonderverse.org/" target="_blank">
+          <img src="Logos/sonderverse.png" alt="Partner 4 Logo" style="width: 125px; height: auto;">
+        </a>
+      </div>
+    </section>
+  </section> 
+
+  <section id="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <h3>What is the cost of admission?</h3>
+      <p>Tickets cost $10 for Adults, $5 for Children aged 12-18. Ages 11 and under are free.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Are there age restrictions?</h3>
+      <p>The event is open to all ages, however all children must be supervised by their parent or guardian.</p>
+    </div>
+    <div class="faq-item">
+      <h3>How can I participate in games?</h3>
+      <p>Most of the day is open board gaming, where you can pick up a game, find players and go.<br/>We have a schedule on <a href="https://aftergame.app/events/a60571c7-dd54-4014-b02c-612775145f18" target="_blank">Aftergame.app</a> to organize to play particular games at specific times.</p>
+    </div>
+    <div class="faq-item">
+      <h3>What games will be available?</h3>
+      <p>We will have a range of board games, card games, and role-playing games available. You can also bring your own games to share with others.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Will there be food and drinks available?</h3>
+      <p>Yes, there will be snacks available for purchase at the venue.<br/>The venue is also located near to the Pakington St shopping district, which features
+         multiple cafes and restaurants.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Is there parking available?</h3>
+      <p>Yes, there is parking available at the venue.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 OmegaCon. All rights reserved.</p>
+  </footer>
+</body>
+</html>
